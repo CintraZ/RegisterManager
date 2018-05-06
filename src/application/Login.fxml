@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Pane" maxHeight="215.0" maxWidth="460.0" minHeight="215.0" minWidth="460.0" prefHeight="215.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <TextField fx:id="TextField_User" layoutX="140.0" layoutY="43.0" />
+      <PasswordField fx:id="TextField_Pass" layoutX="140.0" layoutY="98.0" />
+      <Label layoutX="65.0" layoutY="48.0" text="用户名" />
+      <Label layoutX="72.0" layoutY="103.0" text="密码" />
+      <Button fx:id="btn_Login" layoutX="72.0" layoutY="158.0" mnemonicParsing="false" onAction="#btn_Login_On" prefHeight="21.0" prefWidth="115.0" text="Login" />
+      <Button fx:id="btn_Cancel" layoutX="285.0" layoutY="158.0" mnemonicParsing="false" onAction="#btn_Cancel_On" prefHeight="21.0" prefWidth="115.0" text="Cancel" />
+      <RadioButton fx:id="Radiobtn_Doctor" layoutX="363.0" layoutY="48.0" mnemonicParsing="false" text="Doctor" />
+      <RadioButton fx:id="Radiobtn_Patient" layoutX="362.0" layoutY="103.0" mnemonicParsing="false" text="Patient" />
+      <Label fx:id="Label_Error" layoutX="140.0" layoutY="128.0" prefHeight="20.0" prefWidth="148.0" text="用户名或密码错误！" textFill="#ee0202" visible="false" />
+      
+   </children>
+</AnchorPane>

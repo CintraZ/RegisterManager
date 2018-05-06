@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import np.com.ngopal.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.15829145728643215" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainPageController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label layoutX="237.0" layoutY="16.0" prefHeight="28.0" prefWidth="124.0" text="门 诊 挂 号" textFill="#5c0a41">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+         <Label layoutX="66.0" layoutY="36.0" text="科室名称">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField_soName" layoutX="129.0" layoutY="33.0" onAction="#textField_soName_On" onMouseClicked="#textField_soName_On" />
+            <Label layoutX="322.0" layoutY="36.0" text="医生姓名">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField_dtName" layoutX="385.0" layoutY="33.0" onAction="#textField_dtName_On" onInputMethodTextChanged="#textField_dtName_On" onMouseClicked="#textField_dtName_On" />
+            <Label layoutX="64.0" layoutY="81.0" text="号种类别">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField_numType" layoutX="125.0" layoutY="83.0" onAction="#textField_numType_On" onMouseClicked="#textField_numType_On" />
+            <Label layoutX="321.0" layoutY="81.0" text="号种名称">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField_numName" layoutX="385.0" layoutY="77.0" onAction="#textField_numName_On" onMouseClicked="#textField_numName_On" />
+            <Label layoutX="64.0" layoutY="128.0" text="交款金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField_curAmount" layoutX="129.0" layoutY="124.0" onAction="#textField_curAmount_On" onMouseClicked="#textField_curAmount_On" />
+            <Label layoutX="322.0" layoutY="128.0" text="应缴金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField_Amount" layoutX="386.0" layoutY="124.0" onAction="#textField_Amount_On" onMouseClicked="#textField_Amount_On" />
+            
+            <TextField fx:id="textField_ecg" layoutX="129.0" layoutY="165.0" />
+            <Label layoutX="64.0" layoutY="169.0" text="找零金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="321.0" layoutY="169.0" text="挂号号码">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField_regID" layoutX="386.0" layoutY="165.0" />
+            <Button fx:id="btn_ok" layoutX="176.0" layoutY="249.0" mnemonicParsing="false" onAction="#btn_ok_On" text="确定">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_clr" layoutX="272.0" layoutY="249.0" mnemonicParsing="false" onAction="#Btnclear" text="清除">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_exit" layoutX="365.0" layoutY="249.0" mnemonicParsing="false" onAction="#Btnexit" text="退出">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="Label_full" layoutX="396.0" layoutY="210.0" prefHeight="20.0" prefWidth="181.0" text="今日该号种挂号已满!" textFill="#e40e0b" />
+            <Label fx:id="Label_change" layoutX="164.0" layoutY="297.0" prefHeight="20.0" prefWidth="181.0" text="号种价格已改变！" textFill="#e40e0b" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
